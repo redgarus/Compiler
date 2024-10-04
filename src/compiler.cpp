@@ -813,9 +813,9 @@ Value *TermExpr::codegen() {
     
     if(Op == "*")
         return Builder->CreateMul(lhs, rhs, "termtmp");
-    else if(Op == "/") {
-        return Builder->CreateSDiv(lhs, rhs, "termtmp");;
-    } else
+    else if(Op == "/")
+        return Builder->CreateSDiv(lhs, rhs, "termtmp");
+    else
         return LogGenError("invalid binary (term) operator " + Op);
 }
 
