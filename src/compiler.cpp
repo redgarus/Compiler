@@ -55,8 +55,8 @@ using namespace llvm::sys;
 
 
 // * Headers
-#include "token.hpp"
-#include "ast.hpp"
+#include "headers/token.hpp"
+#include "headers/ast.hpp"
 
 #ifdef DEBUG_MODE   
     #define debug_tok(tok) cout << "Type: " << (tok) << ". "\
